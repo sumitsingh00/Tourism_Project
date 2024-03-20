@@ -7,7 +7,7 @@ const App = () => {
   const [tours, setTours] = useState(data);
 
   function removeTour(id) {
-    const newTours = tours.filter(tour => tour.id !== id);// card se sab kuch delete kr ke ek id daal diya
+    const newTours = tours.filter(tour => tour.id !== id);// jiski bhi ID aai hai usko chor ke sab delete kr diya
     setTours(newTours);
   }
 
