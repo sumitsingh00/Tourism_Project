@@ -9,6 +9,9 @@ function Tours({tours, removeTour}) {
                 {
                     tours.map( (tour) => {
                         return <Card key={tour.id} {...tour} removeTour={removeTour}></Card>
+                        // pure ke pure (...tour) wala single object pass kr di 
+                        //If you have an object and want to pass all the properties as separate prop, write it like this:
+                        // <MyJsx {...commonProps} />
                     } )
                 }
             </div>
